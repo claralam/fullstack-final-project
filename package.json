@@ -1,0 +1,30 @@
+{
+  "name": "fullstack-final-project",
+  "version": "1.0.0",
+  "description": "Final Project for 67-328",
+  "main": "index.js",
+  "scripts": {
+    "lite": "lite-server --baseDir ./src",
+    "start": "npm run lite && npm run watch",
+    "build": "tailwindcss -i ./src/input.css -o ./src/css/styles.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./src/css/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claralam/fullstack-final-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claralam/fullstack-final-project/issues"
+  },
+  "homepage": "https://github.com/claralam/fullstack-final-project#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "lite-server": "^2.6.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "keywords": []
+}
