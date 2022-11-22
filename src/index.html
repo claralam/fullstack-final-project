@@ -22,7 +22,10 @@
         <h1 class="text-3xl py-5">Online Recipe Book</h1>
         <div id="viewRecipes" class="flex">
             <h2 class="text-2xl pr-3">All Recipes</h2>
-            <button class="shadow bg-blue-500 hover:bg-blue-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button" onclick="showForm()">Add a new recipe</button>
+            <button class="shadow bg-blue-500 hover:bg-blue-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button" onclick="showForm(); loadRecipes()">Add a new recipe</button>
+            <div id="recipeCards">
+
+            </div>
         </div>
 
         <div id="addNewRecipe" class="py-5 hidden">
