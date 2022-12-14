@@ -27,11 +27,19 @@
                 <button class="shadow bg-blue-500 hover:bg-blue-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button" onclick="showForm(); loadRecipes()">Add a new recipe</button>
             </div>
             <!-- Recipe Grid -->
-            <div id="recipeGrid" class="grid grid-cols-4 container md:px-12 md:my-10  p-5 sm:p-0 justify-between gap-8">
+            <div class="grid grid-cols-4 container md:px-12 md:my-10  p-5 sm:p-0 justify-between gap-8">
+                <div class="flex-col shadow-xl rounded-lg p-10 bg-white hover:cursor-pointer">
+                    <img src="img/chocolate_chip_cookies.jpg" class="w-full h-1/2 object-cover my-4">
+                    <div class="flex flex-col relative space-y-3 lg:mb-0">
+                        <h1 class="text-3xl font-semibold">Chocolate chip cookies</h1>
+                        <p>30 min</p>
+                        <p>Easy simple chocolate chip cookies. Grandma's recipe.</p>
+                    </div>
+                </div>`;
             </div>
         </div>
 
-        <div id="addNewRecipe" class="mx-auto md:px-12 py-10 sm:p-0 my-6 hidden">
+        <div id="addNewRecipe" class="py-5 hidden">
             <button class="shadow bg-gray-500 hover:bg-gray-400 focus:shadow-outline focus:outline-none text-white py-2 px-4 rounded" type="button" onclick="showRecipes()"> &lt Back to all recipes</button>
             <!-- Form for adding a new recipe -->
             <h2 class="text-2xl pr-3 py-2">Add a new recipe</h2>
