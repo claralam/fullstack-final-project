@@ -1,30 +1,29 @@
 {
   "name": "fullstack-final-project",
   "version": "1.0.0",
-  "description": "Final Project for 67-328",
-  "main": "index.js",
+  "description": "Client Side for 67-328 Final Project",
+  "main": "client.js",
   "scripts": {
     "lite": "lite-server --baseDir ./src",
     "start": "npm run build && npm run lite",
-    "build": "tailwindcss -i ./src/input.css -o ./src/css/styles.css",
-    "watch": "tailwindcss -i ./src/input.css -o ./src/css/styles.css --watch"
+    "build": "tailwindcss -i ./src/css/input.css -o ./src/css/styles.css",
+    "watch": "tailwindcss -i ./src/css/input.css -o ./src/css/styles.css --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/claralam/fullstack-final-project.git"
+    "url": "git+https://github.com/claralam/fullstack-final-project-client.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/claralam/fullstack-final-project/issues"
+    "url": "https://github.com/claralam/fullstack-final-project-client/issues"
   },
-  "homepage": "https://github.com/claralam/fullstack-final-project#readme",
-  "dependencies": {
-    "express": "^4.18.2",
-    "lite-server": "^2.6.1"
-  },
+  "homepage": "https://github.com/claralam/fullstack-final-project-client#readme",
   "devDependencies": {
     "tailwindcss": "^3.2.4"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
