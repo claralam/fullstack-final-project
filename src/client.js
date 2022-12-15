@@ -156,6 +156,7 @@ $(document).ready(function () {
             data: data,
             success: (res) => {
                 console.log('Success!', res);
+                location.reload();
             },
             error: (res) => {
                 alert(`Error: In sending the request!, ${res}`);
